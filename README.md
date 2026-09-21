@@ -1,29 +1,24 @@
-# Welcome to your Lovable project
+# Hamza Kaya — Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+## Static website
 
-## Build with Lovable
+`index.html` is the standalone portfolio published to GitHub Pages. It contains
+its own styles and inline icons; no build step is required.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+The workflow in `.github/workflows/deploy-pages.yml` publishes the page when
+`index.html` or the workflow changes on `main`. It can also be run manually
+from the repository's Actions tab. Set Settings → Pages → Source to GitHub Actions.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## React application
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+The repository also contains a TanStack Start application using React,
+TypeScript, and Tailwind CSS.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm ci
 npm run dev
 ```
 
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+Run `npm run build` to build the application with Nitro's Cloudflare preset.
+The GitHub Pages workflow publishes the standalone HTML page independently
+of this application.
