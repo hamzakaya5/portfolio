@@ -5,7 +5,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -200,16 +199,9 @@ function Portfolio() {
             <Mail className="size-4 text-primary" />
             kaya.hamza59@hotmail.com
           </a>
-          <a
-            href="tel:[phone removed]"
-            className="flex items-center gap-3 transition-colors hover:text-foreground"
-          >
-            <Phone className="size-4 text-primary" />
-            [phone removed]
-          </a>
           <p className="flex items-center gap-3">
             <MapPin className="size-4 text-primary" />
-            Kağıthane, Istanbul
+            Istanbul, Türkiye
           </p>
           <div className="flex items-center gap-4 pt-3">
             <a
